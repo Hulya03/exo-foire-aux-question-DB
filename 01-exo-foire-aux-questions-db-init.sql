@@ -17,7 +17,7 @@ CREATE TABLE question(
 	question_id INT(11) AUTO_INCREMENT,	
 	question_date DATE NOT NULL,
 	question_label VARCHAR(255) NOT NULL, 
-	question_reponse TEXT, 
+	question_response TEXT, 
 	user_id INT(11) NOT NULL, 
 	PRIMARY KEY (question_id),
 	FOREIGN KEY(user_id) REFERENCES t_user(user_id)
